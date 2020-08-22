@@ -1,6 +1,7 @@
 class ExtendedList(list):
 
     def swap(self, i_1, i_2):
+        # Checks to see if the indexes are valid.
         if i_1 >= len(self) or i_1 < 0 or i_2 >= len(self) or i_2 < 0:
             raise IndexError("List index out of range.")
 
